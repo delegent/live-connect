@@ -1,38 +1,186 @@
-.App {
-  text-align: center;
+::-webkit-scrollbar{
+	display:none;
+}
+.homePageWrapper{
+	display:flex;
+	align-items:center;
+	justify-content: center;
+	color:var(--text-color);
+	height:100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.formWrapper{
+	background:var(--form-color); 
+	padding:20px; 
+	border-radius:10px;
+	width:400px; 
+	max-width: 90%; 
+	box-shadow: rgb(0 0 0 / 80%) 0px 26px 30px -10px,
+      rgb(0 0 0 / 90%) 0px 16px 10px -10px, 
+	  -2px -3px 10px #111;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+footer {
+	position:fixed;
+	bottom:0;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+footer a{
+	color:var(--link-color);  
 }
 
-.App-link {
-  color: #61dafb;
+.inputGroup{
+	display:flex; 
+	flex-direction: column; 
+	
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.mainLabel{
+	margin-bottom:20px; 
+	margin-top:0; 
+
 }
+
+.home-page-logo{
+	
+	width:40%; 
+	margin:0 auto;
+	margin-left:110px;
+
+
+}
+
+.inputBox{
+	padding:10px; 
+	border-radius: 5px; 
+	outline:none; 
+	border:none;
+	margin-bottom:10px; 
+	background: #eee;
+	font-size:16px; 
+	font-weight:400;
+}
+
+.btn{
+	border:none; 
+	padding:10px; 
+	border-radius:5px; 
+	font-size:16px; 
+	cursor:pointer; 
+	font-weight:bold; 
+	transition:all 0.3s ease-out;  
+}
+
+.joinBtn{
+		background:var(--link-color);
+		width:100px; 
+		margin-left:auto; 
+		color:#fff;
+
+}
+
+.joinBtn:hover{
+	opacity:0.9;
+}
+
+.createInfo{
+	text-align: center;
+	margin: 0 auto; 
+	margin-top: 20px; 
+
+}
+
+.createInfo > a{
+	color:var(--link-color);
+	text-decoration: none;  
+	border-bottom:1px solid var(--link-color);
+	transition:all 0.3s ease-out; 
+}
+
+.createInfo > a:hover, footer a:hover{
+	opacity:0.9; 
+}
+
+.mainWrap{
+	display:grid;
+	grid-template-columns:230px 1fr;	
+
+}
+
+.aside{
+	background:var(--bg-color);
+	padding:16px; 
+	color:#fff; 
+	display:flex; 
+	flex-direction:column;
+	
+}
+
+.asideInner{
+	flex:1;
+	
+}
+
+.clientsList{
+	display:flex;
+	align-items:center; 
+	flex-wrap:wrap; 
+	gap:20px; 
+}
+
+
+.client{
+	display:flex; 
+	align-items:center; 
+	flex-direction:column; 
+	font-weight:bold;
+}
+
+
+.userName{
+	margin-top:10px; 
+}
+.logo{
+	border-bottom:solid 1px #424242;
+	padding-bottom:10px; 
+}
+
+.logo-img{
+	width:150px;
+	height:120px;
+	margin-left: 10px;
+}
+
+
+.leaveBtn{
+	width:100%;
+	margin-top:20px; 
+	background:var(--link-color);
+	color:#fff;
+
+
+}
+.leaveBtn:hover{
+	opacity:0.9;
+}
+
+
+.CodeMirror{
+	min-height: 100vh; 
+	font-size:15px; 
+	line-height:1.6;
+}
+
+
+
+
+
+
+
+
+
+
+
+
